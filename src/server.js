@@ -9,10 +9,10 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 const tituloDestaqueRoutes = require('./routes/tituloDestaque');
-const listagemTemasRoutes = require('./routes/listagemTemas');
+const midiaTemasRoutes = require('./routes/midiaTema');
 
 app.use('/titulo-destaque', tituloDestaqueRoutes);
-app.use('/listagem-temas', listagemTemasRoutes);
+app.use('/midia-temas', midiaTemasRoutes);
 
 app.get('/', (req, res) => {
     return res.json({Hello: "World!"});
